@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-industrial-950 text-industrial-100 font-sans antialiased;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-industrial-100 to-industrial-400;
+}
+
+.card-luxury {
+  @apply bg-industrial-900/50 border border-industrial-800 backdrop-blur-sm transition-all duration-300 hover:border-industrial-700 hover:bg-industrial-900/80;
+}
